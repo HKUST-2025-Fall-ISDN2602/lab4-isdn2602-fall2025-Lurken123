@@ -28,11 +28,11 @@ bar([0:10],prob); xlabel('run length'); ylabel('Probability');
 set(gca,'XTickLabel',{'0','1','2','3','4','5','6','7','8','9','>=10'});
 title('Histogram of the runs from 0 to 9 and >= 10');
 
-
      % % % % Revise the following code to generate a valid  and efficient dictionary   % % % %  
-     dict = {[0 0 0 0], [0 0 0 1], [0 0 1 0], [0 0 1 1], [0 1 0 0],...
-         [0 1 0 1], [0 1 1 0], [0 1 1 1], [1 0 0 0], [1 0 0 1],[1 0 1 0]};
-       
+     dict = {[0 0 0 0 0 0 0 0], [1], [0 0 1], [0 1 1], [0 1 0],...
+         [0 0 0 1 1], [0 0 0 0 0 1], [0 0 0 1 0], [0 0 0 0 0 0 1], [0 0 0 0 0 0 0 1],[0 0 0 0 1]};
+
+
     % % % % Do not change the code below % % % %  
 
 % Use the dictionary to encode the run lengths
